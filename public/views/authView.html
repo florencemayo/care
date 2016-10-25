@@ -1,0 +1,41 @@
+<div class="bs">
+	<ul class="nav tr">
+		<li id="loginPage">
+	    	<a href="#" ng-click="showLoginPage()">Login</a>
+	  	</li>
+	  	<li id="registerPage">
+	    	<a href="#" ng-click="showRegisterPage()">Register</a>
+	  	</li>
+	</ul>
+</div>
+
+<form ng-show="loginPage" class="rf rh">
+  <h3>Login</h3>
+  <div class="el">
+    <label for="InputEmail1">Email address</label>
+    <input type="email" class="form-control" id="InputEmail1" ng-model="email" placeholder="Enter email" />
+  </div>
+  <div class="el">
+    <label for="InputPassword">Password</label>
+    <input type="password" ng-model="password" class="form-control" id="InputPassword" placeholder="Password" />
+  </div>
+  <button type="submit" ng-click="login()" class="ce fe">Submit</button>
+</form>
+
+<form ng-show="registerPage" class="rf rh">
+  <h3>Register</h3>
+  <div class="el">
+    <label for="exampleInputName">Name</label>
+    <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Name" />
+  </div>
+   <div class="el">
+    <label for="InputEmail1">Email</label>
+    <input type="email" class="form-control" id="InputEmail1" ng-model="email" placeholder="Enter email" />
+  </div>
+  <div class="el">
+    <label for="InputPassword">Password</label>
+    <input type="password" ng-model="password" class="form-control" id="InputPassword" placeholder="Password" />
+  </div>
+  <button type="submit" ng-click="login()" class="ce fe">Submit</button>
+</form>
+

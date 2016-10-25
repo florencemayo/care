@@ -1,0 +1,45 @@
+<h1>Metadata</h1>
+<form>
+<div class="qo qw">
+      <div class="qq">
+        <h3 class="qr">Add New Metadata</h3>
+      </div>
+      <div class="qp">
+      <div class="fu">
+      <div class="gr">
+   
+    <div class="el">
+    <label for="categoryName" class="ga ex">Name</label>
+    <div class="hg">
+    <input type="name" class="form-control" ng-model="metadata" name="name" id="metadata-name"  placeholder="Enter name of metadata" />
+    </div>
+    </div>
+
+      </div>
+      <div class="gr"> 
+           <button  ng-click="save(metadata)" class="ce fn fh">Save</button>
+      </div>
+      </div>
+      </div>
+        
+</div>
+
+<table class="cl cm" >
+    <thead>
+      <tr>
+       <th>METADATA NAME</th>
+       <th><span class="bv ack"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="datas in metadatas">
+        <td>{{datas.name}}</td>
+        <td>    
+        <button class="ce fn fj" ng-click="edit(datas.id)">Edit</button>
+        <button  ng-click="update(datas.id)" class="ce fn fh">Update</button>
+        <button class="ce fn fl" ng-click="delete(datas.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+</table>
+</form>

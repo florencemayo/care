@@ -1,0 +1,75 @@
+<div class="bw">
+    <div class="fu">
+        <div class="ge aom">
+            <nav class="aot">
+                <div class="aon">
+                    <button class="amy amz aoo" type="button" data-toggle="collapse" data-target="#nav-toggleable-sm">
+                        <span class="ct">Toggle nav</span>
+                    </button>
+                    <a class="aop cn" href="index.html">
+                       <h4>MCARE</h4>
+                    </a>
+                </div>
+
+                <div class="collapse and" id="nav-toggleable-sm">
+                    <form class="aor">
+                        <input class="form-control" type="text" placeholder="Search...">
+                        <button type="submit" class="fm">
+                            <span class="bv adn"></span>
+                        </button>
+                    </form>
+                    <ul class="nav of nav-stacked">
+                        <li class="tq">Dashboards</li>
+                        <li class="active">
+                            <a href="./#reports">Reports</a>
+                        </li>
+                        <li >
+                            <a href="./#program_data">Programme Data</a>
+                        </li>
+                        <li >
+                            <a href="./#upload">Upload</a>
+                        </li>
+                        <li class="tq">Settings</li>
+                        <li >
+                            <a href="./#region">Regions</a>
+                        </li>
+                        <li>
+                            <a href="./#district">Districts</a>
+                        </li>
+                        <li>
+                            <a href="./#categories" target="blank">
+                                Categories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./#metadata">Metadata</a>
+                        </li>
+                        <li>
+                            <a href="./#users" data-toggle="modal">
+                                Users
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="rw aky">
+                </div>
+            </nav>
+        </div>
+        <div class="hc aps">
+            <div class="apa">
+                <div class="apb">
+                    <h6 class="apd">Dashboards</h6>
+                    <h2 class="apc">Overview</h2>
+                </div>
+
+                <div class="ob ape">
+
+               <h5 ng-if="authenticated">Welcome, {{currentUser.name}}</h5>
+                </div>
+            </div>
+
+            <hr class="aky">
+            <!--Contents-->
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
