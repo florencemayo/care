@@ -3,7 +3,7 @@ angular.module("excelAnalyser",[
         'satellizer',
         'ngSanitize',
         'excelAnalyserDirectives',
-        'excelAnalyserControllers',
+        'careControllers',
         'excelAnalyserServices',
         'excelAnalyserFilters',
         'mgcrea.ngStrap',
@@ -70,6 +70,14 @@ angular.module("excelAnalyser",[
                 url: '/metadata',
                 templateUrl: 'views/metadata.html',
                 controller: 'mainController'
-            });;
+            }).state('patient',{
+                url: '/patient',
+                templateUrl: 'views/patient.html',
+                controller: 'patientController'
+            }).state('registerPatient',{
+                url: '/registerPatient',
+                templateUrl: 'views/registerPatient.html',
+                controller: 'patientController'
+            });
     })
     .constant('API_URL', 'http://localhost/web_excel_analyser/public/index.php/');

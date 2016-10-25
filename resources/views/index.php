@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    <title>MCARE</title>
+    <title>HospIS</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
     <link href=" <?php echo asset('assets/css/toolkit-light.css') ?>" rel="stylesheet">
@@ -40,81 +40,57 @@
 
 
 <body>
-<div class="bw">
+<body>
+  <div class="bw">
     <div class="fu">
-        <div class="ge aom" ng-if="authenticated">
-            <nav class="aot">
-                <div class="aon">
-                    <button class="amy amz aoo" type="button" data-toggle="collapse" data-target="#nav-toggleable-sm">
-                        <span class="ct">Toggle nav</span>
-                    </button>
-                    <a class="aop cn" href="index.html">
-                       <h4>CARE</h4>
-                    </a>
-                </div>
+      <div class="ge aom">
+        <nav class="aot">
+          <div class="aon">
+            <!--button class="amy amz aoo" type="button" data-toggle="collapse" data-target="#nav-toggleable-sm">
+              <span class="ct">Toggle nav</span>
+            </button-->
+            <a class="ol tu" href="../index.html">
+              <h1>HospIS</h1>
+            </a>
+          </div>
 
-                <div class="collapse and" id="nav-toggleable-sm">
-                    <form class="aor">
-                        <input class="form-control" type="text" placeholder="Search...">
-                        <button type="submit" class="fm">
-                            <span class="bv adn"></span>
-                        </button>
-                    </form>
-                    <ul class="nav of nav-stacked">
-                        <li class="tq">Dashboards</li>
-                        <li class="active">
-                            <a href="./#reports">Reports</a>
-                        </li>
-                        <li >
-                            <a href="./#program_data">Programme Data</a>
-                        </li>
-                        <li >
-                            <a href="./#upload">Upload</a>
-                        </li>
-                        <li class="tq">Settings</li>
-                        <li >
-                            <a href="./#region">Regions</a>
-                        </li>
-                        <li>
-                            <a href="./#district">Districts</a>
-                        </li>
-                        <li>
-                            <a href="./#categories" target="blank">
-                                Categories
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./#metadata">Metadata</a>
-                        </li>
-                        <li>
-                            <a href="./#users" data-toggle="modal">
-                                Users
-                            </a>
-                        </li>
-                    </ul>
-                    <hr class="rw aky">
-                </div>
-            </nav>
-        </div>
-        <div class="hc aps">
-            <div class="apa" ng-if="authenticated">
-                <div class="apb">
-                    <h6 class="apd">Dashboards</h6>
-                    <h2 class="apc">Overview</h2>
-                </div>
-
-                <div class="ob ape">
-
-
-                </div>
+          <div class="collapse and" id="nav-toggleable-sm">
+            <ul class="nav of nav-stacked">
+              <li class="tq">Dashboards</li>
+              <li>
+                <a href="./#patient">Find Patient</a>
+              </li>
+              <li>
+                <a href="./#registerPatient">Register Patient</a>
+              </li>
+              <li>
+                <a href="./#metadata">Metadata</a>
+              </li>
+              <li class="tq">Settings</li>
+              <li >
+                <a href="../docs/index.html">
+                  Manage Users
+                </a>
+              </li>
+            </ul>
+            <hr class="rw aky">
+          </div>
+        </nav>
+      </div>
+      <div class="hc aps">
+            <div class="apa">
+              <div class="apb">
+                <h4 class="apd">Dashboards/?</h4>
+              </div>
             </div>
 
             <hr class="aky">
-            <!--Contents-->
             <div ui-view></div>
+
         </div>
-    </div>
+ </div>
 </div>
+
 
 </body>
 
@@ -146,12 +122,9 @@
 <!--controllers-->
 <script type="text/javascript" src="<?php echo  asset("controllers/mainController.js") ?>"></script>
 
-<script type="text/javascript" src="<?php echo  asset("controllers/districtController.js") ?>"></script>
-<script type="text/javascript" src="<?php echo  asset("controllers/regionController.js") ?>"></script>
-<script type="text/javascript" src="<?php echo  asset("controllers/categoriesController.js") ?>"></script>
+<script type="text/javascript" src="<?php echo  asset("controllers/patientController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/metadataController.js") ?>"></script>
-<script type="text/javascript" src="<?php echo  asset("controllers/regionController.js") ?>"></script>
-<script type="text/javascript" src="<?php echo  asset("controllers/districtController.js") ?>"></script>
+
 <script type="text/javascript" src="<?php echo  asset("controllers/login/authController.js") ?>"></script>
 <script type="text/javascript" src="<?php echo  asset("controllers/login/userController.js") ?>"></script>
 

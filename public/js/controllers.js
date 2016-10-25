@@ -5,12 +5,10 @@
 /* Controllers
 * Put all the controllers you will use here
 */
-var excelAnalyserControllers = angular.module('excelAnalyserControllers', 
+var careControllers = angular.module('careControllers', 
 	[
 	 'mainController', 
-	 'districtController', 
-	 'regionController', 
-	 'categoriesController', 
+	 'patientController', 
 	 'metadataController', 
 	 'authController', 
 	 'userController'
